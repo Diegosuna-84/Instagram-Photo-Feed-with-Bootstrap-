@@ -1,6 +1,11 @@
-body {
-    margin: 10px;
+.card {
+    margin: auto;
+    margin-bottom: 20px;
 }
 card-body img {
     margin: auto;
-}   
+} 
+nav-link {
+    color: black;
+
+}  
