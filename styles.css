@@ -5,7 +5,8 @@
 card-body img {
     margin: auto;
 } 
-nav-link {
+.nav-link {
     color: black;
 
-}  
+}
+

@@ -12,10 +12,6 @@
 </head>
 
 <body>
-    </nav>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
 
@@ -23,12 +19,12 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
                 type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram text-dark"></i>
                 Instagram</button>
         </li>
         <div class="col-9"></div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create new post
 
         </button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -36,27 +32,30 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">caption
-
+                    <div class="modal-body">
+                       <div class="input-group">
+                            <span class="input-group-text"></span>
+                            <textarea class="form-control" aria-label="With textarea">Add the caption of your post here</textarea>
+                       </div>
+                       
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-success">Save changes</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-light fa-gear"></i>
         </button>
     </ul>
-    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-content sm md lg xl xxl" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-            tabindex="0">...</div>
+            tabindex="0"></div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
             ...</div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
@@ -86,8 +85,9 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">El loco silva</h5>
-                <p class="card-text">This guy es called el loco for A reason! I really hope to see you back on the jump
+
+                <p class="card-text">This guy es called el loco for A reason! I really hope to see you back on
+                    the jump
                     line!</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -97,8 +97,9 @@
             <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Expetidion 33</h5>
-                <p class="card-text">one of the best games out there. and my inspiration to become a game dev.</p>
+
+                <p class="card-text">one of the best games out there. and my inspiration to become a game dev.
+                </p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
@@ -107,13 +108,12 @@
             <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+            <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
@@ -122,4 +122,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>>>
+</html>>> </div>
