@@ -12,111 +12,138 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram text-dark"></i>Instagram</a>
+            <div class="col-9"></div>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group">
+                                <span class="input-group-text"></span>
+                                <textarea class="form-control"
+                                    aria-label="With textarea">Add the caption of your post here</textarea>
+                            </div>
+                            <i class="fa-regular fa-camera"></i>
+                            <i class="fa-light fa-location-dot"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                <i class="fa-brands fa-instagram text-dark"></i>
-                Instagram</button>
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
         </li>
-        <div class="col-9"></div>
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Create new post
-        </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title">Beagles are awesome</h5>
+                <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <strong>204 likes</strong>
+                    <p class="card-text">Beagles are probably the best bread out there playful always joyful!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title">Panorama</h5>
+                <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <strong>102 likes</strong>
+                    <p class="card-text">i'd love to live here some day!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title">El loco silva</h5>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <strong>100 likes</strong>
+                    <p class="card-text">This guy es called el loco for A reason! I really hope to see you back on
+                        the jump
+                        line!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title">Expetidion 33</h5>
+                <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <strong>95 likes</strong>
+                    <p class="card-text">one of the best games out there. and my inspiration to become a game dev.
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title">lorna-shore</h5>
+                <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <strong>51 likes</strong>
+                    <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="content-fluid d-flex">
+                <div class="row align-items-start">
+                    <div class="col-3">
+                        <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg">
                     </div>
-                    <div class="modal-body">
-                        <div class="input-group">
-                            <span class="input-group-text"></span>
-                            <textarea class="form-control"
-                                aria-label="With textarea">Add the caption of your post here</textarea>
-                        </div>
-                        <i class="fa-regular fa-camera"></i>
-                        <i class="fa-light fa-location-dot"></i>
+                    <div class="col">
+                        <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Save changes</button>
+                    <div class="col">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s">
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fa-light fa-gear"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
-            </ul>
-        </div>
-    </ul>
-    <div class="tab-content-" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-            tabindex="0"></div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            ...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            ...</div>
-        <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Beagles are awesome</h5>
-            <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" class="card-img-top"
-                alt="...">
-            <div class="card-body">
-                <strong>204 likes</strong>
-                <p class="card-text">Beagles are probably the best bread out there playful always joyful!</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Panorama</h5>
-            <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <strong>102 likes</strong>
-                <p class="card-text">i'd love to live here some day!</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <h5 class="card-title">El loco silva</h5>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <strong>100 likes</strong>
-                <p class="card-text">This guy es called el loco for A reason! I really hope to see you back on
-                    the jump
-                    line!</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Expetidion 33</h5>
-            <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <strong>95 likes</strong>
-                <p class="card-text">one of the best games out there. and my inspiration to become a game dev.
-                </p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <h5 class="card-title">lorna-shore</h5>
-            <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <strong>51 likes</strong>
-                <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
-            </div>
-        </div>
+
     </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -126,5 +153,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>>>    
-            
+</html>
