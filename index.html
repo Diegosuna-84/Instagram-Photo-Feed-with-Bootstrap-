@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div Class="content m-10">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light bg-opacity 75 p-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <i class="fa-brands fa-instagram text-dark"></i>Instagram</a>
@@ -29,13 +30,18 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="input-group">
-                                <span class="input-group-text"></span>
-                                <textarea class="form-control"
-                                    aria-label="With textarea">Add the caption of your post here</textarea>
+                            <div class="input-group d-flex">
+                               
+                                <textarea rows="4" cols="50" placeholder="Describe yourself here..." class="mx-auto">
+                                    
+                                </textarea>
                             </div>
-                            <i class="fa-regular fa-camera"></i>
-                            <i class="fa-light fa-location-dot"></i>
+                            <div>
+                                <button type="button" class="btn btn-light"><i
+                                        class="fa-regular fa-camera"></i></button>
+                                <button type="button" class="btn btn-light"><i
+                                        class="fa-solid fa-location-dot"></i></button>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -44,36 +50,40 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-group">
+            <div class="btn-group border border-white">
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
-
+                    <li><button class="dropdown-item" type="button">Profile</button></li>
+                    <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                    <li><button class="dropdown-item" type="button">Private and Data</button></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
         </li>
-
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
             tabindex="0">
             <div class="card" style="width: 18rem;">
-                <h5 class="card-title">Beagles are awesome</h5>
+                <h5 class="card-title p-2 text-center">Beagles are awesome</h5>
                 <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" class="card-img-top"
                     alt="...">
                 <div class="card-body">
@@ -82,7 +92,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <h5 class="card-title">Panorama</h5>
+                <h5 class="card-title p-2 text center">Panorama</h5>
                 <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -91,7 +101,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <h5 class="card-title">El loco silva</h5>
+                <h5 class="card-title p-2 text-center">El loco silva</h5>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -102,7 +112,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <h5 class="card-title">Expetidion 33</h5>
+                <h5 class="card-title p-2 text-center">Expetidion 33</h5>
                 <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -112,7 +122,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <h5 class="card-title">lorna-shore</h5>
+                <h5 class="card-title p-2 text-center">lorna-shore</h5>
                 <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -120,17 +130,55 @@
                     <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
                 </div>
             </div>
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-title p-2 text-center">Elden Ring</h5>
+                <img src="https://media.npr.org/assets/img/2022/02/23/eldenring_21_4k-25120461292d0c3a0414.08944875_wide-e8f10694d264c26b3b42b65774ea218344b2286e.jpg?s=1100&c=50&f=jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <strong>356 Likes</strong>
+                    <p class="card-text">One of the best Souls games out there!!</p>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <div class="content-fluid">
-                <div class="row d-flex">
-                    <div class="col-3">
+            <div class="content">
+                <div class="flex-row d-flex">
+                    <div class="Beagle col-4 p-2">
                         <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
-                            class="object-fit-scale border rounded" alt="...">
+                            class="object-fit-fill border rounded w-100 h-100" alt="...">
+
                     </div>
-                    <div class="col-3">
+                    <div class="panorama col-4 p-2">
+
                         <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg"
-                            class="object-fit-contain border rounded" alt="...">
+                            class="object-fit-contain border rounded w-100 h-100" alt="...">
+
+                    </div>
+                    <div class="El loco silva col-4 p-2">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
+                            class="object-fit-contain border rounded w-100 h-100" alt="...">
+
+                    </div>
+
+                </div>
+                <div class="flex-row d-flex">
+                    <div class="Beagle col-4 p-2">
+                        <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
+                            class="object-fit-fill border rounded w-100 h-100" alt="...">
+
+                    </div>
+                    <div class="panorama col-4 p-2">
+
+                        <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
+                            class="object-fit-contain border rounded w-100 h-100" alt="...">
+
+                    </div>
+                    <div class="El loco silva col-4 p-2">
+
+                        <img src="https://media.npr.org/assets/img/2022/02/23/eldenring_21_4k-25120461292d0c3a0414.08944875_wide-e8f10694d264c26b3b42b65774ea218344b2286e.jpg?s=1100&c=50&f=jpeg"
+                            class="object-fit-contain border rounded w-100 h-100" alt="...">
+
                     </div>
 
                 </div>
@@ -144,6 +192,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
