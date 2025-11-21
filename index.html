@@ -12,62 +12,62 @@
 </head>
 
 <body>
-    <div Class="content m-10">
+    <div class="content m-10">
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light bg-opacity 75 p-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <i class="fa-brands fa-instagram text-dark"></i>Instagram</a>
-                <div class="col-2">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create new post
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="input-group d-flex">
-
-                                    <textarea rows="4" cols="50" placeholder="Add your Caption here" 
-                                        class="mx-auto text-body-secondary">
+                <div class="d-flex ">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group d-flex">
+                                        <textarea rows="2" cols="60" placeholder="Add your Caption here"
+                                            class="mx-auto text-body-secondary">
 
                                 </textarea>
+                                    </div>
+                                    <div class="mt-2">
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-regular fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <button type="button" class="btn btn-light"><i
-                                            class="fa-regular fa-camera"></i></button>
-                                    <button type="button" class="btn btn-light"><i
-                                            class="fa-solid fa-location-dot"></i></button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Save changes</button>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Save changes</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="btn-group border">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><button class="dropdown-item" type="button">Profile</button></li>
-                        <li><button class="dropdown-item" type="button">Accesibility</button></li>
-                        <li><button class="dropdown-item" type="button">Private and Data</button></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                </div>
+
+                    <div class="btn-group border">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Profile</button></li>
+                            <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                            <li><button class="dropdown-item" type="button">Private and Data</button></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -86,16 +86,19 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                 tabindex="0">
-                <div class="card" style="width: 18rem;">
-                    <h5 class="card-title p-2 text-center">Beagles are awesome</h5>
+                <div class="card" style="width: 36rem;">
+                    <div class="card-header d-flex justify-content-between">
+                    <h5 class="card-title p-2">Beagles are awesome</h5>
+                <p>14/06</p>
+                </div>
                     <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
                         class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body bg-light">
                         <strong>204 likes</strong>
                         <p class="card-text">Beagles are probably the best bread out there playful always joyful!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text center">Panorama</h5>
                     <img src="https://www.mountainphotography.com/images/960/20120928-Cimarron-Sunset-Panorama.jpg"
                         class="card-img-top" alt="...">
@@ -104,7 +107,7 @@
                         <p class="card-text">i'd love to live here some day!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">El loco silva</h5>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EtzmAeLNaKZ-veCLtp2dH1z414SkluxAlQ&s"
                         class="card-img-top" alt="...">
@@ -115,7 +118,7 @@
                             line!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">Expetidion 33</h5>
                     <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/03/exp01-85abcc01fd9a2f34450d-scaled.jpg"
                         class="card-img-top" alt="...">
@@ -125,7 +128,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">lorna-shore</h5>
                     <img src="https://media.themusic.com.au/images/standard/Artists/L/lorna-shore/2210-lorna-shore-mike-elliot.990x660.jpg"
                         class="card-img-top" alt="...">
@@ -134,7 +137,7 @@
                         <p class="card-text">These guys are very talented #hardcore #speedmetal</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">Elden Ring</h5>
                     <img src="https://media.npr.org/assets/img/2022/02/23/eldenring_21_4k-25120461292d0c3a0414.08944875_wide-e8f10694d264c26b3b42b65774ea218344b2286e.jpg?s=1100&c=50&f=jpeg"
                         class="card-img-top" alt="...">
@@ -143,7 +146,7 @@
                         <p class="card-text">One of the best Souls games out there!!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">Oblivion</h5>
                     <img src="https://image.api.playstation.com/vulcan/ap/rnd/202504/0320/68c80108fbd904cf27aeee9988153a34eaa5c1962547fcd7.jpg"
                         class="card-img-top" alt="...">
@@ -152,16 +155,17 @@
                         <p class="card-text">This is a master piece</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">Wukong</h5>
                     <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/02/Black-Myth-Wukong.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
                         <strong>236 Likes</strong>
-                        <p class="card-text">No one saw this coming! this game made the game industry reconsider small developers</p>
+                        <p class="card-text">No one saw this coming! this game made the game industry reconsider small
+                            developers</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 36rem;">
                     <h5 class="card-title p-2 text-center">Shadowheart</h5>
                     <img src="https://assetsio.gnwcdn.com/SHADOWHEART.png?width=690&quality=85&format=jpg&dpr=3&auto=webp"
                         class="card-img-top" alt="...">
